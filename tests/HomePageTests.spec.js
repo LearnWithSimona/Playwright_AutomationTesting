@@ -21,7 +21,7 @@ test.describe('Home Page Tests', () => {
         await expect(page).toHaveURL(process.env.BASE_URL);
     });
 
-    test('User tries to sort by Name(A to Z)', async ({ page }) => {
+    test('User tries to sort products by Name(A to Z)', async ({ page }) => {
        await page.selectOption(homePage.sortingDropdownPath, 'az');
         const itemNames = await page.$$eval('.inventory_item_name', items =>
             items.map(item => item.textContent)
@@ -30,7 +30,7 @@ test.describe('Home Page Tests', () => {
         expect(itemNames).toEqual(sortedNames);
     });
 
-    test('User tries to sort by Name(Z to A)', async ({ page }) => {
+    test('User tries to sort products by Name(Z to A)', async ({ page }) => {
         await page.selectOption(homePage.sortingDropdownPath, 'za');
          const itemNames = await page.$$eval('.inventory_item_name', items =>
              items.map(item => item.textContent)
@@ -39,7 +39,7 @@ test.describe('Home Page Tests', () => {
          expect(itemNames).toEqual(sortedNames);
      });
 
-     test('User tries to sort by Price(low to high)', async ({ page }) => {
+     test('User tries to sort products by Price(low to high)', async ({ page }) => {
         await page.selectOption(homePage.sortingDropdownPath, 'lohi');
          const itemNames = await page.$$eval('.inventory_item_name', items =>
              items.map(item => item.textContent)
@@ -48,7 +48,7 @@ test.describe('Home Page Tests', () => {
          expect(itemNames).toEqual(sortedNames);
      });
 
-     test('User tries to sort by Price(high to low)', async ({ page }) => {
+     test('User tries to sort products by Price(high to low)', async ({ page }) => {
         await page.selectOption(homePage.sortingDropdownPath, 'hilo');
          const itemNames = await page.$$eval('.inventory_item_name', items =>
              items.map(item => item.textContent)
