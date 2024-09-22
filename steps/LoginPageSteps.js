@@ -3,7 +3,7 @@ import { LoginPage } from "../pages/LoginPage"
 export class LoginPageSteps {
 
     constructor(page) {
-        this.page = page; // Store the Playwright page object for use in methods
+        this.page = page; 
         this.login= new LoginPage(this.page)
       }
    
