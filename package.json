@@ -1,0 +1,27 @@
+{
+  "name": "Playwright_AutomationTesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LearnWithSimona/Playwright_AutomationTesting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LearnWithSimona/Playwright_AutomationTesting/issues"
+  },
+  "homepage": "https://github.com/LearnWithSimona/Playwright_AutomationTesting#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "sprintf-js": "^1.1.3"
+  }
+}
